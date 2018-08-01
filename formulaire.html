@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire</title>
+	<link rel="stylesheet" href="assets/form.css">
+</head>
+<body>
+
+	<form action="mailto:vaudem@free.fr">
+		
+		<div id="generale">
+
+			<div class="gauche">
+
+				<label for="nom">Informations vous concernant
+					<input type="text" name="nom" placeholder="Votre nom" required class="form">
+				</label>
+				<label for="prenom">
+					<input type="text" name="prenom" placeholder="Votre prénom" required class="form">
+				</label>
+				<label for="telephone">
+					<input type="tel" name="telephone" placeholder="Téléphone" required class="form">
+				</label>
+				<label for="ville">
+					<select name="commune" id="">
+						<option value="maville" selected>Votre ville</option>
+						<option value="aulnay">Aulnay</option>
+						<option value="paris">Paris</option>
+						<option value="marseille">Marseille</option>
+					</select>
+				</label>
+			</div>
+
+
+			<div class="droite">
+				<label for="message">Votre message ...
+				<textarea name="message" id="" cols="30" rows="10"></textarea>
+				</label>
+				<input type="submit" value="Envoyer" class="send">
+			</div>
+		</div>
+	</form>
+
+</body>
+</html>
